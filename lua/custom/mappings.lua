@@ -12,7 +12,7 @@ M.general = {
       end,
       "formatting",
     },
-    ["rpl"] = {"%s//g"},
+    ["rpl"] = {":%s//g"},
 
     ["<leader>fe"] = { "<cmd> Telescope diagnostics <CR>", "Find Errores" },
 
