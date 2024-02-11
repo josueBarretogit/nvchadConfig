@@ -10,6 +10,7 @@ M.treesitter = {
     "vue",
     "javascript",
     "typescript",
+    "go",
     "tsx",
     "c",
     "markdown",
@@ -41,6 +42,7 @@ M.mason = {
     -- c/cpp stuff
     "clangd",
     "clang-format",
+    "gopls",
   },
 }
 
