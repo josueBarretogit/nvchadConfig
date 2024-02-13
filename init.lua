@@ -21,7 +21,6 @@ if not vim.g.vscode then
   vim.opt.rtp:prepend(lazypath)
   require "plugins"
 
-  require("leap").create_default_mappings()
 
   vim.api.nvim_create_autocmd('TextYankPost', {
     group = vim.api.nvim_create_augroup('highlight_yank', {}),
