@@ -21,6 +21,7 @@ M.general = {
     ["<leader><leader>l"] = { "<CMD> HopWordCurrentLine<CR>", "Hint Line" },
     ["<c-d>"] = { "<C-d>zz", "Better ctrl d" },
     ["<c-u>"] = { "<C-u>zz", "Better ctrl u" },
+    ["<leader>g"] = { "<CMD> Lazygit <CR>", "Open lazygit" },
 
   },
   v = {
