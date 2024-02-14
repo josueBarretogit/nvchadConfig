@@ -12,7 +12,7 @@ M.general = {
       end,
       "formatting",
     },
-    ["rpl"] = {":%s//g"},
+    ["rpl"] = {":%s//g<left><left>"},
 
     ["<leader>fe"] = { "<cmd> Telescope diagnostics <CR>", "Find Errores" },
     ["<leader>s"] = { "<CMD> HopWord <CR>", "Hint all words" },
@@ -22,6 +22,9 @@ M.general = {
     ["<c-d>"] = { "<C-d>zz", "Better ctrl d" },
     ["<c-u>"] = { "<C-u>zz", "Better ctrl u" },
 
+    ["<C-s>"] = { "<cmd> w <CR>gg=G<c-o>", "Save file and format" },
+    ["<leader>m"] = { ":lua require('harpoon.mark').add_file() <CR>", "Bookmark file" },
+    ["<s-l>"] = { ":lua require('harpoon.ui').toggle_quick_menu()<CR>", "Open bookmarks" },
   },
   v = {
     [">"] = { ">gv", "indent"},
