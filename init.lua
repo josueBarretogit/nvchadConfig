@@ -20,12 +20,17 @@ if not vim.g.vscode then
   dofile(vim.g.base46_cache .. "defaults")
   vim.opt.rtp:prepend(lazypath)
   require "plugins"
+  local harpoon = require("harpoon")
+  harpoon:setup()
 
-
+  vim.keymap.set("n", "<leader>a", function() harpoon:list():append() end)
+  vim.keymap.set("n", "<s-l>", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end)
 
   vim.cmd([[
   let @c = "i/**\<enter>@type {}\<enter>*/\<Esc>kf{a"
   ]])
+
+  vim.cmd(":abbreviate c console.log('probando')")
 
   vim.api.nvim_create_autocmd('TextYankPost', {
     group = vim.api.nvim_create_augroup('highlight_yank', {}),
