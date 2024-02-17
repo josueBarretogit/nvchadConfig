@@ -6,8 +6,9 @@ local options = {
 
 		css = { "prettier" },
 		html = { "prettier" },
-		vue = { "Vue.volar" },
-		typescript = { "tsserver" },
+		vue = { "prettier" },
+		typescript = { "prettier" },
+		php = { "pretty-php" },
 
 		sh = { "shfmt" },
 	},
