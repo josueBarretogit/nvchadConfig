@@ -166,6 +166,24 @@ local plugins = {
   event = {"CmdlineEnter"},
   ft = {"go", 'gomod'},
   build = ':lua require("go.install").update_all_sync()' -- if you need to install/update all binaries
+},
+{
+    "iamcco/markdown-preview.nvim",
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    ft = { "markdown" },
+    build = function() vim.fn["mkdp#util#install"]() end,
+},
+  {
+    "nvim-pack/nvim-spectre"
+  },
+{
+  "folke/todo-comments.nvim",
+  dependencies = { "nvim-lua/plenary.nvim" },
+  opts = {
+    -- your configuration comes here
+    -- or leave it empty to use the default settings
+    -- refer to the configuration section below
+  }
 }
 
 }
